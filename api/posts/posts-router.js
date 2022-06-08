@@ -3,9 +3,10 @@
 const express = require('express')
 const postsModel = require('./posts-model.js')
 const router = express.Router()
+const cors = require('cors')
 
 router.use(express.json())
-
+router.use(cors())
 
 /*
   find,
